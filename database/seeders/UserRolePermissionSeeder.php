@@ -46,6 +46,7 @@ class UserRolePermissionSeeder extends Seeder
 
         // Lets give all permission to super-admin role.
         $allPermissionNames = Permission::pluck('name')->toArray();
+        
 
         $superAdminRole->givePermissionTo($allPermissionNames);
 
